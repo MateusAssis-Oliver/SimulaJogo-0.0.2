@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Campeonato {
 
@@ -28,11 +29,7 @@ public class Campeonato {
         }
         strTimes = " ";
     }
-     
-
-     
-     
-
+    
     public void cadastraTime(String nomeTime){
 
         /* Cria um nivo time passando o nome inserido */
@@ -41,6 +38,17 @@ public class Campeonato {
         /*Adiciona o time no Array  */
         addTime(time);
 
+    }
+
+    public void jogo(Time time_A, Time time_B){
+        
+
+    }
+
+    public int randonGols(){
+
+        Random aleatorio = new Random();
+        return aleatorio.nextInt();
     }
 
 
